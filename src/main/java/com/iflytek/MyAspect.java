@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 public class MyAspect {
     @Pointcut("execution(* com.iflytek.service..*(..))")
     public void cut() {
-        System.out.println("111");
     }
 
     @Before("execution(* com.iflytek.service..*(..))")
